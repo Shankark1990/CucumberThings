@@ -28,8 +28,8 @@ public class LoginPage {
 
     public void verify_order_success(){
         try{
+            System.out.println("Inside verify order success method");
             driver.findElement(By.xpath(RepoObject.finishBtn_xpath)).isDisplayed();
-//            Assert.assertEquals();
         }catch (Exception e) {
             System.out.println(e.getMessage());
         }
