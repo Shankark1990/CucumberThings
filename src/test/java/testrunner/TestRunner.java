@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "feature/OrderPlace.feature",
+        features = "src/test/resources/features/OrderPlace.feature",
         glue = "stepdefination",
         dryRun = false
 
