@@ -27,7 +27,7 @@ public class StepDefination {
 
     }
 
-    @Then("Validate user succussfully logged into application")
+    @Then("Validate user successfully logged into application")
     public void validate_user_succussfully_logged_into_application() {
         Hooks.loginPage.verify_order_success();
 
