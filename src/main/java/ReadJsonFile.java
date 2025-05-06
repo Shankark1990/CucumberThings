@@ -30,14 +30,12 @@ public class ReadJsonFile {
             objData[i][0] = data[i];
 //            System.out.println(objData.toString());
         }
-        System.out.println();
-
 
     }
 
 
     @DataProvider(name = "json_data")
-    public Object[][] passwordData() throws IOException {
+    public Object[][] passwordData() throws IOException, IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         JSONData[] data = objectMapper.readValue(new File("resources/JsonData.json"), JSONData[].class);
         System.out.println(data.length);
@@ -56,8 +54,6 @@ public class ReadJsonFile {
     public void testPasswordValidation(JSONData data) {
         System.out.println(data.getPassword());
         System.out.println(data.getError());
-
     }
-
 
 }
