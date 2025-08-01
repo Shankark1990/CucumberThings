@@ -3,6 +3,7 @@ package stepdefination;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Reporter;
 import pages.LoginPage;
 
 public class StepDefination {
@@ -12,6 +13,7 @@ public class StepDefination {
     public void user_enter_a_in_username_field(String string) {
         System.out.println("Inside stepdefination..");
         Hooks.loginPage.enter_user_name(string);
+        Reporter.log("Hello");
 
     }
 
